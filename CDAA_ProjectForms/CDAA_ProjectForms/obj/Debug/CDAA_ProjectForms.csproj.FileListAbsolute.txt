@@ -1,0 +1,10 @@
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.csprojAssemblyReference.cache
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.Properties.Resources.resources
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.csproj.GenerateResource.cache
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\bin\Debug\CDAA_ProjectForms.exe.config
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\bin\Debug\CDAA_ProjectForms.exe
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\bin\Debug\CDAA_ProjectForms.pdb
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.LeBoJeu.resources
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.exe
+C:\Users\Jonathan\Desktop\L3\Semestre 1\UE2 CDAA\Projet\CDAA_ProjectForms\CDAA_ProjectForms\obj\Debug\CDAA_ProjectForms.pdb
