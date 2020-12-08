@@ -62,6 +62,25 @@ namespace CDAA_ProjectForms
             }
             return s;
         }
+        public Jeu GetJeuNom(String nom)
+        {
+            Jeu ljres = new Jeu();
+            for (int i = 0; i < this.Taille; i++)
+            {
+                if (this.GetJeu(i).Nom.Equals(nom)) ljres = this.GetJeu(i);
+            }
+            return ljres;
+        }
+
+        public LesJeux GetJeuGenre(Genres genre)
+        {
+            LesJeux jeuRecup = new LesJeux();
+            for (int i = 0; i < this.Taille; i++)
+            {
+                if (this.GetJeu(i).Genre.Equals(genre)) jeuRecup.AjoutJeu(this.GetJeu(i));
+            }
+            return jeuRecup;
+        }
 
         /*
          * Init pour avoir une base avec des jeux sans avoir a construire à chaque fois

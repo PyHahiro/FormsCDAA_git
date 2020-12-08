@@ -30,7 +30,7 @@ namespace CDAA_ProjectForms
          */
         public override String ToString()
         {
-            return base.ToString() + " | Notice : " + this.notice + " | Etat : " + Enum.GetName(typeof(Etats), etat);
+            return base.ToString() + "\nNotice : " + this.notice + "\nEtat : " + Enum.GetName(typeof(Etats), etat);
         }
         /*
              Constructeur 0
@@ -53,6 +53,11 @@ namespace CDAA_ProjectForms
         /*
             Equals
          */
+        public JeuRetro(Jeu j) : base(j)
+        {
+            this.notice = false;
+            this.etat = Etats.Inconnu;
+        }
 
         public override bool Equals(Object o)
         {

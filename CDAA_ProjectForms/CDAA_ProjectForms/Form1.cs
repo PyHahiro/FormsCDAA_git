@@ -38,7 +38,7 @@
             ListePhotos.DrawMode = DrawMode.OwnerDrawVariable;
             foreach (Jeu j in c.Lj.Listj)
             {
-                if (comboBox1.SelectedItem.Equals(j.Genre))
+                if (comboBox1.SelectedItem.Equals(j.Genre) && j.Img != null)
                 {
                     il.Images.Add(j.Img);
                     ListePhotos.Items.Add(j.Img);
@@ -118,7 +118,8 @@
         private void ListePhotos_DrawItem(object sender, DrawItemEventArgs e)
         {
             Point p = e.Bounds.Location;
-            il.Draw(e.Graphics,p, e.Index);
+            if (e.Graphics != null && e.Index > -1 && il.Images.Count > 0)
+                il.Draw(e.Graphics, p, e.Index);
         }
 
        
@@ -138,6 +139,44 @@
         {
             Init_All_Game();
 
+        }
+
+        private void ajouterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaisieJeuDlg saisie = new SaisieJeuDlg();
+            DialogResult dial = saisie.ShowDialog();
+            if (dial == DialogResult.OK)
+            {
+                if (saisie.LeJeu.Img == null)
+                    saisie.LeJeu.Img = Properties.Resources.axel;
+                c.AjoutJeu(saisie.LeJeu);
+                
+            }
+            Init_All_Game();
+        }
+
+        private void visualiserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lesJeuxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VisuJeuDlg diag = new VisuJeuDlg(c.Lj);
+            diag.ShowDialog();
+        }
+
+        private void modifierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModifDlg diag = new ModifDlg(c.Lj);
+            diag.ShowDialog();
+        }
+
+        private void supprimerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupprimerDlg diag = new SupprimerDlg(c.Lj);
+            diag.ShowDialog();
+            Init_All_Game();
         }
     }
 }

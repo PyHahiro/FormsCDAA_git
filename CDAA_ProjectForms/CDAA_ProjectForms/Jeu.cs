@@ -53,8 +53,8 @@ namespace CDAA_ProjectForms
          */
         public override String ToString()
         {
-            return ("Nom : " + this.nom + " | Description : " + this.description + " | Plateforme : " + this.plateforme + " Genre : " + Enum.GetName(typeof(Genres), genre) + " | Editeur : " + this.editeur
-                + " | Prix : " + this.prix + " | Date :" + this.date + " | Reconditionné : " + this.recondition);
+            return ("Nom : " + this.nom + "\nDescription : " + this.description + "\nPlateforme : " + this.plateforme + "\nGenre : " + Enum.GetName(typeof(Genres), genre) + "\nEditeur : " + this.editeur
+                + "\nPrix : " + this.prix + "\nDate :" + this.date + "\nReconditionné : " + this.recondition);
         }
         /*
              Constructeur 0
@@ -84,7 +84,18 @@ namespace CDAA_ProjectForms
         /*
          * Constructeur Complet
          */
-
+        public Jeu(Jeu j)
+        {
+            this.nom = j.Nom;
+            this.description = j.Description;
+            this.plateforme = j.Plateforme;
+            this.genre = j.Genre;
+            this.editeur = j.Editeur;
+            this.prix = j.Prix;
+            this.date = j.Date;
+            this.recondition = j.Recondition;
+            this.img = j.Img;
+        }
         public Jeu(String n, String d, String p, Genres g, String e, double prix, DateTime dat, Boolean b)
         {
             this.nom = n;
